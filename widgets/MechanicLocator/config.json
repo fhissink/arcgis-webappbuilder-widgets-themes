@@ -1,0 +1,4 @@
+{
+    "widgetName": "Mechanic locator",
+    "closestFacilityTask": "http://route.arcgis.com/arcgis/rest/services/World/ClosestFacility/NAServer/ClosestFacility_World"
+}

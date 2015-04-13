@@ -1,0 +1,26 @@
+<div>
+    <div class="widgetDescription">
+        <p>${nls.widgetDescription}</p>
+    </div>
+    <div style="margin-top:10px; float:left; width:100%;">
+        <div style="float:left; width:60%; margin-right:10%; height:100%; padding-top:10px;">
+            <div style="width:70%; float:left;"><p style="vertical-align:middle; text-align: left;">${nls.numberOfMechanics}</p></div>
+            <select style="float:left; width:30%;" data-dojo-type="dijit/form/Select" id="mechanicSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="jimu-btn" style="float:left; width:25%; margin-left:5%;" data-dojo-attach-event="onclick: btnSelectClickHandler">${nls.select}</div>
+        <div style="float:left; width: 100%; margin-top:10px;"><p data-dojo-attach-point="selectMessage" style="float:left; display:none; width: 100%;">${nls.selectMessage}</p></div>
+    </div>
+    <div data-dojo-attach-point="results" style="display:none; float:left; width:100%; margin-top:10px;">
+        <div data-dojo-attach-point="mechanicsOverview" style="width:100%;">
+            <div style="float:left; width:100%;" id="selectPlaceHolder">
+            </div>
+            <div class="jimu-btn" style="float:right; margin-top:10px;" data-dojo-attach-event="onclick: btnDisplayRouteClickHandler">${nls.displayRoute}</div>
+        </div>
+        <div style="float:left; width:100%; margin-top:10px; border:solid 1px black;" data-dojo-attach-point="routeDescription">${nls.selectRoute}</div>
+    </div>
+</div>
